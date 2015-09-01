@@ -6,6 +6,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_STATIC_JAVA_LIBRARIES := \
         android-common \
         guava \
+		quickdial \
         android-support-v13 \
         android-support-v4
 
@@ -23,6 +24,12 @@ LOCAL_EMMA_COVERAGE_FILTER := *,-com.android.common.*
 LOCAL_REQUIRED_MODULES := SoundRecorder
 
 include $(BUILD_PACKAGE)
+
+include $(CLEAR_VARS)
+LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES := \
+    quickdial:libs/mxbrowser-cloud.jar 
+
+include $(BUILD_MULTI_PREBUILT)
 
 # additionally, build tests in sub-folders in a separate .apk
 include $(call all-makefiles-under,$(LOCAL_PATH))

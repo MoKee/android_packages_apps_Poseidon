@@ -19,6 +19,7 @@ package com.android.browser;
 import android.app.Application;
 import android.util.Log;
 import android.webkit.CookieSyncManager;
+import com.mx.browser.MxBrowser;
 
 public class Browser extends Application { 
 
@@ -41,6 +42,9 @@ public class Browser extends Application {
         CookieSyncManager.createInstance(this);
         BrowserSettings.initialize(getApplicationContext());
         Preloader.initialize(getApplicationContext());
+
+        MxBrowser.initCreate(this);
+        MxBrowser.initApplication(this);
     }
 
 }

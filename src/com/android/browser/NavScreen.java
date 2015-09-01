@@ -37,6 +37,10 @@ import android.widget.PopupMenu;
 import android.widget.PopupMenu.OnMenuItemClickListener;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.content.Intent;
+
+import android.net.Uri;
+
 
 import com.android.browser.NavTabScroller.OnLayoutListener;
 import com.android.browser.NavTabScroller.OnRemoveListener;
@@ -45,6 +49,12 @@ import com.android.browser.UI.ComboViews;
 
 import java.util.HashMap;
 import java.util.List;
+
+import com.mx.browser.MxActionDefine;
+
+import com.mx.browser.navigation.MxQuickDialDragLayer.QuickDialOpenUrlListener;
+import com.mx.browser.navigation.QuickDialWindow;
+
 
 public class NavScreen extends RelativeLayout
         implements OnClickListener, OnMenuItemClickListener, OnThumbnailUpdatedListener {
@@ -162,9 +172,47 @@ public class NavScreen extends RelativeLayout
         if (mBookmarks == v) {
             mUiController.bookmarksOrHistoryPicker(ComboViews.Bookmarks);
         } else if (mNewIncognitoTab == v || mNewTab == v) {
-            openNewTab(mNewIncognitoTab == v);
+            // openNewTab(mNewIncognitoTab == v);
+            final QuickDialWindow q=new QuickDialWindow(mActivity);
+            q.getQuickDialDragLayer().setQuickDialOpenUrlListener(new QuickDialOpenUrlListener() {
+                
+                @Override
+                public void openUrl(String url) {
+                    Intent intent = null;
+                    intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(url));
+                    intent.putExtra(MxActionDefine.EXTRA_APPLICATION_ID,
+                            MxActionDefine.SOURCE_LOCAL_APPID);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    intent.setClassName(getContext(), BrowserActivity.class.getName());
+                    getContext().startActivity(intent);
+                    q.dimiss();
+                    
+                }
+            });
+            q.show(v);
+            
         } else if (mHomeTab == v) {
-            gotoHomePage();
+            // gotoHomePage();
+            final QuickDialWindow q=new QuickDialWindow(mActivity);
+            q.getQuickDialDragLayer().setQuickDialOpenUrlListener(new QuickDialOpenUrlListener() {
+                
+                @Override
+                public void openUrl(String url) {
+                    Intent intent = null;
+                    intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(url));
+                    intent.putExtra(MxActionDefine.EXTRA_APPLICATION_ID,
+                            MxActionDefine.SOURCE_LOCAL_APPID);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    intent.setClassName(getContext(), BrowserActivity.class.getName());
+                    getContext().startActivity(intent);
+                    q.dimiss();
+                    
+                }
+            });
+            q.show(v);
+            
         } else if (mMore == v) {
             showMenu();
         }
