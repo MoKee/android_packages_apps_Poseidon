@@ -167,52 +167,38 @@ public class NavScreen extends RelativeLayout
         });
     }
 
+    private void showQuickDial(View v) {
+            final QuickDialWindow q=new QuickDialWindow(mActivity);
+            q.getQuickDialDragLayer().setQuickDialOpenUrlListener(new QuickDialOpenUrlListener() {
+                
+                @Override
+                public void openUrl(String url) {
+                    Intent intent = null;
+                    intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(url));
+                    intent.putExtra(MxActionDefine.EXTRA_APPLICATION_ID,
+                            MxActionDefine.SOURCE_LOCAL_APPID);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    intent.setClassName(getContext(), BrowserActivity.class.getName());
+                    getContext().startActivity(intent);
+                    q.dimiss();
+                    
+                }
+            });
+            q.show(v);
+
+    }
     @Override
     public void onClick(View v) {
         if (mBookmarks == v) {
             mUiController.bookmarksOrHistoryPicker(ComboViews.Bookmarks);
         } else if (mNewIncognitoTab == v || mNewTab == v) {
             // openNewTab(mNewIncognitoTab == v);
-            final QuickDialWindow q=new QuickDialWindow(mActivity);
-            q.getQuickDialDragLayer().setQuickDialOpenUrlListener(new QuickDialOpenUrlListener() {
-                
-                @Override
-                public void openUrl(String url) {
-                    Intent intent = null;
-                    intent = new Intent(Intent.ACTION_VIEW);
-                    intent.setData(Uri.parse(url));
-                    intent.putExtra(MxActionDefine.EXTRA_APPLICATION_ID,
-                            MxActionDefine.SOURCE_LOCAL_APPID);
-                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    intent.setClassName(getContext(), BrowserActivity.class.getName());
-                    getContext().startActivity(intent);
-                    q.dimiss();
-                    
-                }
-            });
-            q.show(v);
+            showQuickDial(v);
             
         } else if (mHomeTab == v) {
             // gotoHomePage();
-            final QuickDialWindow q=new QuickDialWindow(mActivity);
-            q.getQuickDialDragLayer().setQuickDialOpenUrlListener(new QuickDialOpenUrlListener() {
-                
-                @Override
-                public void openUrl(String url) {
-                    Intent intent = null;
-                    intent = new Intent(Intent.ACTION_VIEW);
-                    intent.setData(Uri.parse(url));
-                    intent.putExtra(MxActionDefine.EXTRA_APPLICATION_ID,
-                            MxActionDefine.SOURCE_LOCAL_APPID);
-                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    intent.setClassName(getContext(), BrowserActivity.class.getName());
-                    getContext().startActivity(intent);
-                    q.dimiss();
-                    
-                }
-            });
-            q.show(v);
-            
+           showQuickDial(v); 
         } else if (mMore == v) {
             showMenu();
         }
