@@ -40,6 +40,10 @@ import android.view.Window;
 import com.android.browser.search.SearchEngine;
 import com.android.browser.stub.NullController;
 import com.google.common.annotations.VisibleForTesting;
+import com.mx.browser.navigation.MxQuickDialDragLayer;
+import com.mx.browser.R;
+import android.view.LayoutInflater;
+
 
 public class BrowserActivity extends Activity {
 
@@ -62,6 +66,8 @@ public class BrowserActivity extends Activity {
                     + (icicle == null ? "false" : "true"));
         }
         super.onCreate(icicle);
+        MxQuickDialDragLayer mMainQuickDial = (MxQuickDialDragLayer) LayoutInflater.from(this).inflate(R.layout.qd_dial_draglayer, null, false);
+        mMainQuickDial.init(this);
 
         if (shouldIgnoreIntents()) {
             finish();
