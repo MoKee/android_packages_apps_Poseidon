@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+
+    <dimen name="urlFontSize">10sp</dimen>
+    <!-- Account -->
+    <!-- Address_panel -->
+    <!-- Auto_complete_ -->
+    <!-- navigation_item -->
+    <!-- new Navigation -->
+    <!-- bm_item_edit_view -->
+    <!-- bm_item -->
+    <!-- bookmark -->
+    <!-- bookmark_edit_item -->
+    <!-- bookmark_item -->
+    <!-- history -->
+    <!-- bp_item_edit_view -->
+    <!-- bp_popup_view -->
+    <!-- bp_view -->
+    <!-- browser_bottom_view -->
+    <!-- browser_download_item_view -->
+    <!-- browser_find -->
+    <!-- context_menu_item -->
+    <!-- toolbar_fav_menu -->
+    <!-- context_menu_view -->
+    <!-- download -->
+    <!-- downloader_new_task_edit_view -->
+    <!-- downloader_new_task_view -->
+    <!-- gestures_item -->
+    <!-- history_item -->
+    <!-- last_open_child_item -->
+    <!-- last_open_group_item -->
+    <dimen name="last_open_group_item_fontsize">17sp</dimen>
+
+    <!-- menu_bp_tools_bar -->
+    <!-- menu_grid_item -->
+    <!-- menu_main_view -->
+    <!-- mw_frame -->
+    <!-- mw_gallery_item -->
+    <!-- mxbrowser_view_top -->
+    <!-- page_properties -->
+    <!-- progress_bar -->
+    <!-- quick_dial -->
+    <dimen name="quick_dial_window_font_size">13sp</dimen>
+    <!-- quick_dial_item -->
+    <!-- search_listview -->
+    <!-- search_view -->
+    <!-- ssl_certificate -->
+    <!-- ssl_success -->
+    <!-- ssl_warnings -->
+    <!-- status_bar_ongoing_event_progress_bar -->
+    <!-- top_panel_without_search -->
+    <!-- tp_tab_indicator -->
+    <!-- user_guide_toast -->
+    <!-- wg_rss_add_rss_feed_view -->
+    <!-- wg_rss_channel_item_view_top -->
+    <!-- wg_rss_manager_head -->
+    <!-- wg_rss_mgr_channel_item -->
+    <!-- wg_rss_mgr_list_item -->
+    <!-- wg_rsswg_rss -->
+    <!-- UI define start -->
+	<!-- progress height in full screen mode -->
+
+    <!-- menu item -->
+    <!-- context menu -->
+    <!-- list -->
+    <!-- skin -->
+    <!-- haha -->
+    <!-- screen -->
+    <!-- gestureview -->
+    <!-- slidable screen -->
+    <!-- gfan -->
+    <!-- splash activity -->
+    <!-- webview slelect mode popoupwindow -->
+    <!-- banner height -->
+    <!-- multiwindow_item -->
+    <!-- menu padding and categorytitle textsize -->
+    <!-- TabWidget cover width -->
+    <!-- user guide 73 -->
+    <!-- <dimen name="bookmark_tip_x">-73dp</dimen> -->
+    <!-- <dimen name="bookmark_tip_y">37dp</dimen> -->
+
+    <!-- 皮肤中心 -->
+    <!-- readmode -->
+    <!-- <dimen name="addr_favicon_width">32dip</dimen> -->
+    <!-- <dimen name="addr_favicon_height">32dip</dimen> -->
+
+
+    <!-- mx new mainMenu -->
+    <!-- Pie Menu -->
+  <!--   <dimen name="qc_inner_radius">60dip</dimen>
+    <dimen name="qc_radius_start">68dip</dimen>
+ -->    
+    <!-- Favourite Menu -->
+   <!-- cloud send -->
+    <!-- 	<dimen name="pw_account_width">500dp</dimen> -->
+<!-- 	<dimen name="pw_account_height">530dp</dimen> -->
+
+	<!-- no new version dialog -->
+	<!-- Start Page-->
+	<dimen name="widget_title_size">18sp</dimen>
+	
+	<!-- 输入法上方工具条相关 -->
+	<!-- begin 快速拨号合并文件夹 -->
+    <dimen name="qd_folder_margin_top">80dip</dimen>
+    
+    <dimen name="qd_folder_cell_top">5dip</dimen>
+    <dimen name="qd_folder_cell_left">10dip</dimen>
+    
+    <dimen name="qd_folder_name_ly_h">40dip</dimen>
+    <dimen name="qd_folder_name_ly_ml">20dip</dimen>
+    <dimen name="qd_folder_name_ly_mt">7dip</dimen>
+    <dimen name="qd_folder_name_ly_mb">5dip</dimen>
+    <dimen name="qd_textsize">12sp</dimen>
+    <dimen name="qd_folder_name_textsize">16sp</dimen>
+    
+    <dimen name="qd_folder_draw_icon_padding">6dip</dimen>
+    <dimen name="qd_folder_draw_icon_margin">6dip</dimen>
+    
+    <!-- 快速拨号工作区 -->
+    <dimen name="qd_cell_width">80dip</dimen>
+    <dimen name="qd_cell_height">100dip</dimen>
+    <dimen name="qd_layer_padding_top_portrait">10dip</dimen>
+    <dimen name="qd_layer_padding_left_portrait">10dip</dimen>
+    <dimen name="qd_layer_padding_top_landscape">10dip</dimen>
+    <dimen name="qd_layer_padding_left_landscape">15dip</dimen>
+    
+    <dimen name="qd_item_icon_round">10dip</dimen>
+    <dimen name="qd_item_icon_round_tablet">15dip</dimen>
+    
+    <dimen name="qd_item_delete_icon_width">20dip</dimen>
+    
+    <!-- end 快速拨号合并文件夹 -->
+    <!-- weather -->
+    <!-- 快速拨号和聚合阅读的指示器-->
+    <!-- 多窗口 -->
+    <item name="deck_width_padding_percentage" format="float" type="dimen">0.03333</item>
+    <item name="deck_overscroll_percentage" format="float" type="dimen">0.0875</item>
+    <item name="task_affiliation_color_min_alpha_percentage" format="float" type="dimen">0.6</item>
+    <item name="task_view_thumbnail_alpha" format="float" type="dimen">0.9</item>
+    </resources>

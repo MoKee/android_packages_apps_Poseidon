@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/qd_recommend_item_height"
+    android:background="@drawable/list_bg"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingTop="@dimen/qd_recommend_item_padding_ver"
+    android:paddingBottom="@dimen/qd_recommend_item_padding_ver"
+    android:paddingLeft="@dimen/qd_recommend_item_padding_hor"
+    android:paddingRight="@dimen/qd_recommend_item_padding_hor"
+    >  
+
+    <ImageView
+        android:id="@+id/quickdial_recommend_favicon"
+        android:layout_width="@dimen/qd_recommend_item_icon_size"
+        android:layout_height="@dimen/qd_recommend_item_icon_size"
+        android:scaleType="centerInside"
+        android:src="@drawable/default_icon" />
+
+    <ImageView 
+        android:id="@+id/quickdial_recommend_add"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:layout_alignParentRight="true"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/quickdial_recommend_favicon"
+        android:layout_toLeftOf="@id/quickdial_recommend_add"
+        android:layout_marginLeft="@dimen/qd_mostvisit_space_hor_mid"
+        android:layout_marginRight="@dimen/qd_mostvisit_space_hor_mid"
+		android:layout_centerVertical="true"
+        android:id="@+id/quickdial_recommend_middle"
+         >
+
+        <TextView
+            android:id="@+id/quickdial_recommend_sitename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="#ff252525"
+            android:layout_marginRight="@dimen/qd_mostvisit_space_hor_mid"
+            android:textSize="@dimen/qd_recommend_item_sitename_size" />
+        
+        <TextView 
+            android:id="@+id/quickdial_recommend_feature_new"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/qd_recommend_feature_height"
+            android:layout_toRightOf="@id/quickdial_recommend_sitename"
+            android:layout_alignBaseline="@id/quickdial_recommend_sitename"
+            android:background="#cc0000"
+            android:textColor="@android:color/white"
+            android:includeFontPadding="false"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/qd_mostvisit_space_hor_mid"
+            android:textSize="@dimen/qd_recommend_feature_size"
+            android:visibility="gone"
+            android:text="@string/app_center_title_newest"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            />
+        
+        <TextView 
+            android:id="@+id/quickdial_recommend_feature_hot"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/qd_recommend_feature_height"
+            android:layout_toRightOf="@id/quickdial_recommend_feature_new"
+            android:layout_alignBaseline="@id/quickdial_recommend_feature_new"
+            android:background="#ff7200"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/qd_recommend_feature_size"
+            android:includeFontPadding="false"
+       		android:gravity="center"
+            android:layout_marginLeft="@dimen/qd_recommend_feature_padding"
+            android:layout_marginBottom="@dimen/qd_mostvisit_space_hor_mid"
+            android:visibility="gone"
+            android:text="@string/app_center_title_index"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            />
+	
+       	<TextView
+       	    android:id="@+id/quickdial_recommend_description"
+       	    android:layout_width="wrap_content"
+       	    android:layout_height="wrap_content"
+       	    android:textSize="@dimen/qd_recommend_item_descrip_size"
+       	    android:singleLine="true"
+       	    android:ellipsize="end"
+       	    android:textColor="#929596"
+       	    android:layout_below="@id/quickdial_recommend_sitename"
+       	    />
+       	
+       	<TextView 
+       	    android:id="@+id/quickdial_recommend_category"
+       	    android:layout_width="wrap_content"
+       	    android:layout_height="wrap_content"
+       	    android:textSize="@dimen/qd_recommend_item_cat_size"
+       	    android:textColor="#cacaca"
+       	    android:layout_below="@id/quickdial_recommend_description"
+       	    />
+        
+        <TextView
+            android:id="@+id/quickdial_recommend_siteurl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/quickdial_recommend_sitename"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="#ff929596"
+            android:textSize="@dimen/urlFontSize" />
+    </RelativeLayout>
+    
+
+</RelativeLayout>

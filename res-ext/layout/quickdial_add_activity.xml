@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/tp_bg">
+    <TableLayout 
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:stretchColumns="*"
+        >
+        <TableRow 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView 
+        		android:gravity="center"
+                android:id="@+id/textview_websites"
+       			android:text="@string/quickdial_add_toppannel_recommend"
+            	android:textSize="16sp"
+            	android:textColor="#FFFFFF"
+            	android:layout_weight="1"
+            	android:layout_width="0dip"
+            	android:drawableRight="@drawable/quickdial_indicator_line"
+	            android:layout_height="match_parent"/>
+			<TextView 
+           		android:id="@+id/textview_offen_visits"
+           		android:text="@string/quickdial_add_toppannel_mostvisited"
+            	android:textColor="@color/quickdial_add_toppanel_normal"
+        		android:gravity="center"
+            	android:layout_weight="1"
+            	android:layout_width="0dip"
+            	android:layout_height="match_parent"
+            	android:drawableRight="@drawable/quickdial_indicator_line"
+                android:visibility="gone"
+                android:textSize="16sp"/>     
+            <TextView
+            	android:id="@+id/textview_add_manually"
+            	android:textColor="@color/quickdial_add_toppanel_normal"
+           		android:text="@string/quickdial_add_toppanel_manual"
+        		android:gravity="center"
+            	android:layout_weight="1"
+            	android:layout_width="0dip"
+	            android:layout_height="match_parent"
+          		android:textSize="16sp"/>
+        </TableRow>
+    </TableLayout>
+    <LinearLayout 
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="4dp" >
+        <TableLayout android:stretchColumns="*"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content">
+            <TableRow>
+                <LinearLayout
+                    android:orientation="vertical"
+			        android:layout_height="4dp"
+                    android:id="@+id/linearlayout_first_tab_indicator"
+			        android:background="#009cff"/>
+
+                <LinearLayout 
+                    android:orientation="vertical"
+			        android:layout_height="4dp"
+                    android:id="@+id/linearlayout_third_tab_indicator"
+			        android:background="#009cff"
+			        android:visibility="invisible"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:id="@+id/quickdial_add_viewpager" />
+</LinearLayout>

@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="MxActivityTheme" parent="@style/phone" />
+<style name="MxDialog" parent="@android:style/Theme.Dialog">
+         <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@drawable/device_data_send_mid_bg</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="MxDialogNoCloseTouchOutside" parent="@android:style/Theme.Dialog">
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        
+    </style>
+  
+    <style name="AutoCompleteTextView">
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:completionHintView">@android:layout/simple_dropdown_item_1line</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLargeInverse</item>
+        <item name="android:completionThreshold">2</item>
+        <item name="android:dropDownSelector">@android:drawable/list_selector_background</item>
+        <item name="android:popupBackground">@android:drawable/spinner_dropdown_background</item>
+    </style>
+
+
+    <style name="FindDialog">
+        <item name="android:windowEnterAnimation">@anim/find_dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/find_dialog_exit</item>
+    </style>
+    
+    
+ 
+     <style name="Animation.Popup" parent="android:Animation"> 
+        <item name="android:windowEnterAnimation">@anim/menu_popup_window_enter</item> 
+        <item name="android:windowExitAnimation">@anim/menu_popup_window_exit</item> 
+        
+    </style> 
+    
+     
+     <style name="FloatControl">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+    
+    <style name="url_suggestion_highlight">
+         <item name="android:textStyle">bold</item>
+         <item name="android:textColor">@drawable/blue</item>
+    </style>
+    
+    <style name="bookmark_search_highlight">
+         <item name="android:textStyle">bold</item>
+         <item name="android:textColor">@drawable/red</item>
+    </style>
+    
+    <style name="history_group_title">
+         <item name="android:textStyle">bold</item>
+         <item name="android:textColor">@color/history_group_text_color</item>
+         <item name="android:textSize">@dimen/last_open_group_item_fontsize</item>
+         <item name="android:paddingLeft">10dip</item>
+    </style>  
+    
+     <style name="account_register_checkbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/quickdial_checkbox</item>
+        <item name="android:textColor">@color/qb_black</item>
+        <item name="android:paddingLeft">20dip</item>
+    </style>
+    
+    <style name="phone" parent="@android:style/Theme.Black">
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+    
+    <style name="MxEditTextWithCursor" parent="@android:style/Widget.EditText">
+         <item name="android:textCursorDrawable">@null</item>
+     </style>
+     
+    <style name="MxDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="MxFullScreenStyle" >
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+		<item name="android:windowIsTranslucent">true</item> 
+    </style>
+    
+    <style name="MxDialogAnimate">
+        <item name="android:windowEnterAnimation">@anim/dialog_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_fade_out</item>
+    </style>
+    
+    <style name="MxProgressDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowBackground">@color/transparent_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+     
+    <style name="AppTheme" parent="@android:Theme.Black.NoTitleBar">
+ 	</style>
+	<style name="lightListView" parent="@android:style/Widget.ListView" >
+	    <item name="android:background">@color/qb_white</item>
+	    <item name="android:divider">@color/dialog_preference_divider</item>
+	    <item name="android:dividerHeight">@dimen/preference_list_divider_height</item>
+	    <item name="android:cacheColorHint">@android:color/transparent</item>
+	    <item name="android:listSelector">@drawable/quickdial_preference_list_item</item>
+	</style>    
+	
+	<style name="Theme.Preferences" parent="android:Theme.Holo.Light" >
+    	<item name="android:listViewStyle">@style/lightListView</item>
+    	<item name="android:windowTitleBackgroundStyle">@style/windowTitleBackgroundStyle</item>
+    	<item name="android:windowTitleStyle">@style/windowTitleStyle</item>
+    	<item name="android:windowTitleSize">@dimen/setting_header_height</item>
+	</style>
+	
+	<!-- Preference Settings Window Title -->
+	<style name="windowTitleBackgroundStyle">  
+    	<item name="android:background">@color/setting_header_bg</item>                
+  	</style>
+  	<style name="windowTitleStyle">
+    	<item name="android:textColor">@color/qb_white</item>
+    	<item name="android:paddingLeft">@dimen/setting_header_padding_left</item>
+    	<item name="android:textSize">@dimen/preference_window_title_size</item>
+  	</style>
+  	
+  	<style name="AnimationBottomInBottomOut" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/bottom_out</item>
+    </style>
+     
+</resources>

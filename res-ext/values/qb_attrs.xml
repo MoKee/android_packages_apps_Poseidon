@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="sinceAPI" format="integer" />
+    <attr name="endAPI" format="integer" />
+    <attr name="excludeAPIs" format="reference"/>
+    <attr name="supportDeviceTypes" format="reference" />
+    <attr name="supportOsArches" format="reference"/>
+   
+    
+    
+    <declare-styleable name="ConfirmPreference">
+        <attr name="sinceAPI"/>
+        <attr name="endAPI"/>
+        <attr name="excludeAPIs"/>
+    	<attr name="supportDeviceTypes"/>
+    </declare-styleable>
+    
+    <declare-styleable name="ExEditTextPreference">
+        <attr name="sinceAPI"/>
+        <attr name="endAPI"/>
+        <attr name="excludeAPIs"/>
+    	<attr name="supportDeviceTypes"/>
+    </declare-styleable>
+    
+    
+    <declare-styleable name="ExListPreference">
+        <attr name="sinceAPI"/>
+        <attr name="endAPI"/>
+        <attr name="excludeAPIs"/>
+    	<attr name="supportDeviceTypes"/>
+    </declare-styleable>
+    
+    <declare-styleable name="ConfirmCheckablePreference">
+        <attr name="sinceAPI"/>
+        <attr name="endAPI"/>
+        <attr name="excludeAPIs"/>
+    	<attr name="supportDeviceTypes"/>
+    	 <attr name="checkableOn" format="boolean"/>
+    	<attr name="enableTitle" format="reference"/>
+    	<attr name="enableMessage" format="reference"/>
+    	<attr name="disableTitle" format="reference"/>
+    	<attr name="disableMessage" format="reference"/>
+   		<attr name="tipOnEnable" format="boolean"/>
+   		<attr name="tipOnDisable" format="boolean"/> 
+    </declare-styleable>
+    
+	<!--
+		These are the standard attributes that make up a complete theme.
+	-->
+	<declare-styleable name="Theme">
+
+		<eat-comment />
+		<attr name="gestureOverlayViewStyle" format="reference" />
+	</declare-styleable>
+	
+    <declare-styleable name="GestureOverlayView">
+        <!-- Width of the stroke used to draw the gesture. -->
+        <attr name="gestureStrokeWidth" format="float" />
+        <!-- Color used to draw a gesture. -->
+        <attr name="gestureColor" format="color" />
+        <!-- Color used to draw the user's strokes until we are sure it's a gesture. -->
+        <attr name="uncertainGestureColor" format="color" />
+        <!-- Time, in milliseconds, to wait before the gesture fades out after the user
+             is done drawing it. -->
+        <attr name="fadeOffset" format="integer" />
+        <!-- Duration, in milliseconds, of the fade out effect after the user is done
+             drawing a gesture. -->
+        <attr name="fadeDuration" format="integer" />
+        <!-- Defines the type of strokes that define a gesture. -->
+        <attr name="gestureStrokeType">
+            <!-- A gesture is made of only one stroke. -->
+            <enum name="single" value="0" />
+            <!-- A gesture is made of multiple strokes. -->
+            <enum name="multiple" value="1" />
+        </attr>
+        <!-- Minimum length of a stroke before it is recognized as a gesture. -->
+        <attr name="gestureStrokeLengthThreshold" format="float" />
+        <!-- Squareness threshold of a stroke before it is recognized as a gesture. -->
+        <attr name="gestureStrokeSquarenessThreshold" format="float" />
+        <!-- Minimum curve angle a stroke must contain before it is recognized as a gesture. -->
+        <attr name="gestureStrokeAngleThreshold" format="float" />
+        <!-- Defines whether the overlay should intercept the motion events when a gesture
+             is recognized. -->
+        <attr name="eventsInterceptionEnabled" format="boolean" />
+        <!-- Defines whether the gesture will automatically fade out after being recognized. -->
+        <attr name="fadeEnabled" format="boolean" />
+        <!-- Indicates whether horizontal (when the orientation is vertical) or vertical
+             (when orientation is horizontal) strokes automatically define a gesture. -->
+        <attr name="orientation" format="integer" />
+    </declare-styleable>	
+    <eat-comment />
+    
+    
+    
+    
+    <declare-styleable name="SearchEngineMenu">
+    	<attr name="sid" format="integer" />
+    	<attr name="sname" format="string" />
+    	<attr name="stitle" format="string" />
+    	<attr name="sicon" format="integer" />
+    	<attr name="surl" format="string" />
+    </declare-styleable>
+    
+    <declare-styleable name="HelloGallery">
+        <attr name="android:galleryItemBackground" />
+    </declare-styleable>
+     <declare-styleable name="DialogCheckBoxPreference">
+        <attr name="dialogTitle" format="string" />
+        <attr name="dialogMessage" format="string" />
+        <!-- The icon for the dialog. -->
+        <attr name="dialogIcon" format="reference" />
+        <!-- The positive button text for the dialog. Set to @null to hide the positive button. -->
+        <attr name="positiveButtonText" format="string" />
+        <!-- The negative button text for the dialog. Set to @null to hide the negative button. -->
+        <attr name="negativeButtonText" format="string" />  
+    </declare-styleable>
+    <!--  MultiDirectionSlidingDrawer -->
+     <attr name="direction">
+        <enum name="rightToLeft" value="0" />
+        <enum name="bottomToTop" value="1" />
+        <enum name="leftToRight" value="2" />
+        <enum name="topToBottom" value="3" />
+    </attr>
+    
+    <declare-styleable name="MultiDirectionSlidingDrawer">
+        <attr name="handle" format="reference" />
+        <attr name="content" format="reference" />
+        <attr name="direction" />
+        <attr name="bottomOffset" format="dimension"  />
+        <attr name="topOffset" format="dimension"  />
+        <attr name="allowSingleTap" format="boolean" />
+        <attr name="animateOnClick" format="boolean" />
+    </declare-styleable>
+	<!-- end of MultiDirectionSlidingDrawer -->
+	<!-- readmode pullToRefresh -->
+	<declare-styleable name="PullToRefresh">
+        <attr name="adapterViewBackground" format="reference|color" />
+        <attr name="headerBackground" format="reference|color" />
+        <attr name="headerTextColor" format="color" />
+        <attr name="mode">
+            <flag name="pullDownFromTop" value="0x1" />
+            <flag name="pullUpFromBottom" value="0x2" />
+            <flag name="both" value="0x3" />
+        </attr>
+    </declare-styleable>
+    <!-- end of readmode pullToRefresh -->
+    
+    <!-- begin quickdial -->
+    <declare-styleable name="MxQuickDialDragFolder">
+		<attr name="folder_icon_row_count" format="integer" />
+		<attr name="folder_icon_column_count" format="integer" />
+		<attr name="folder_draw_icon_margin" format="dimension" />
+		<attr name="folder_draw_icon_padding" format="dimension" />
+		<attr name="qd_folder_cell_top" format="dimension"/>
+		<attr name="qd_folder_cell_left" format="dimension"/>
+		<attr name="qd_folder_title_height" format="dimension"/>
+	</declare-styleable>
+
+
+	
+	<declare-styleable name="DragCellLayout">
+		<attr name="cellWidth" format="dimension" />
+		<attr name="cellHeight" format="dimension" />
+		<attr name="layer_padding_top_landscape" format="dimension" />
+		<attr name="layer_padding_top_portrait" format="dimension" />
+		<attr name="layer_padding_left_landscape" format="dimension" />
+		<attr name="layer_padding_left_portrait" format="dimension" />
+		<attr name="layer_small_columns" format="integer" />
+	</declare-styleable>
+	<!-- end quick dial -->
+</resources>

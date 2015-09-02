@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <solid android:color="#ffffffff" />      
+    <corners android:topLeftRadius="@dimen/qd_item_icon_round"     
+             android:topRightRadius="@dimen/qd_item_icon_round"      
+             android:bottomRightRadius="@dimen/qd_item_icon_round"     
+             android:bottomLeftRadius="@dimen/qd_item_icon_round"/>
+    <stroke android:width="0dip" android:color="#00000000"/>
+</shape>

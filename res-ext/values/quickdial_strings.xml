@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Maxthon Browser</string>
+    <string name="hour_ago"> hour(s) ago</string>
+    <string name="minute_ago"> minute(s) ago</string>
+    <string name="share_title">Title</string>
+    <string name="share_url">URL</string>
+    <string name="share_sign">Sent from Maxthon Cloud Browser</string>
+    <string name="bp_add_item">Add</string>
+    <string name="quick_dial_url_had_exist">Already in Quick Access</string>
+    <string name="quick_dial_add_success">Quick Access added</string>
+    <string name="quick_dial_edit_success">Quick Access edited</string>
+    <string name="quick_dial_delete_success">Deleted successfully.</string>
+    <string name="quick_dial_delete_faliure">Oops... Something went wrong. Try again.</string>
+    <string name="quickdial_add_toppanel_manual">Manual</string>
+    <string name="quickdial_add_toppannel_mostvisited">Most Visited</string>
+    <string name="quickdial_add_toppannel_recommend">Recommended</string>
+    <string name="quickdial_add_button_add">Add</string>
+    <string name="quickdial_add_button_edit">Edit</string>
+    <string name="qd_recommend_loading">Loading...</string>
+    <string name="qd_recommend_loaded_failure">Click to reload</string>
+    <string name="qd_deleted">Item has been removed</string>
+    <string name="quickdial_add_recommend_toast_failure_loading">Data couldn\'t be loaded</string>
+    <string name="bm_error_title_empty">You need to enter the title.</string>
+    <string name="bm_error_url_empty">You need to enter URL.</string>
+    <string name="history_label_today">today</string>
+    <string name="history_label_yesterday">yesterday</string>
+    <string name="wg_rss_date_yesterday">Yesterday</string>
+    <string name="wg_rss_added_to_widget">Added to Desktop.</string>
+    <string name="app_center_title_index">Hot</string>
+    <string name="app_center_title_newest">Latest</string>
+    <string name="qb_choosertitle_sharevia">Share</string>
+    <string name="reader_channel_list_time_yesterday">Yesterday</string>
+    <string name="reader_channel_list_time_just_now">Just now</string>
+    <string name="reader_channel_list_time_x_minutes_ago">%d minutes ago</string>
+    <string name="reader_channel_list_time_x_hours_ago">%d hours ago</string>
+    <string name="qd_folder_name">Folder</string>
+    <!-- MultiWindow -->
+    <!-- weather -->
+    <string name="device_type">phone</string>
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mx.browser.navigation.MxQuickDialDragFolder xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:folder="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/qd_folder_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:background="@drawable/qd_folder_corners_bg"
+    android:orientation="vertical"
+    folder:folder_icon_row_count="2"
+    folder:folder_icon_column_count="2"
+    folder:folder_draw_icon_margin="@dimen/qd_folder_draw_icon_margin"
+    folder:folder_draw_icon_padding="@dimen/qd_folder_draw_icon_padding"
+    folder:qd_folder_cell_top="@dimen/qd_folder_cell_top"
+    folder:qd_folder_cell_left="@dimen/qd_folder_cell_left"
+    folder:qd_folder_title_height="70dip" >
+
+    <EditText
+        android:id="@+id/qd_folder_name"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/qd_folder_name_ly_h"
+        android:paddingTop="@dimen/qd_folder_name_ly_mt"
+        android:paddingBottom="@dimen/qd_folder_name_ly_mb"
+        android:paddingLeft="@dimen/qd_folder_name_ly_ml"
+        android:paddingRight="@dimen/qd_folder_name_ly_ml"
+        android:textSize="@dimen/qd_folder_name_textsize"
+        android:textColor="@color/qd_item_title_color"
+        android:enabled="true"
+        android:singleLine="true"
+        android:inputType="text"
+        android:background="@drawable/qd_edit_bg"
+        android:gravity="center"/>
+
+<!--         android:paddingStart="100dip" -->
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:background="@color/qd_line_blue" />
+
+    <com.mx.browser.navigation.DragCellScrollView
+        android:id="@+id/qd_cell_scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="top"
+        android:layout_marginBottom="10dip"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <com.mx.browser.navigation.DragWorkspace
+            android:id="@+id/folder_workspace"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+            <com.mx.browser.navigation.DragCellLayout
+                android:id="@+id/cell"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="0dip" />
+        </com.mx.browser.navigation.DragWorkspace>
+    </com.mx.browser.navigation.DragCellScrollView>
+
+</com.mx.browser.navigation.MxQuickDialDragFolder>

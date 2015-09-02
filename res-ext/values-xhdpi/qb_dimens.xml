@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+	<!-- user guide -->
+	<!-- no new version dialog -->
+	<!-- start page -->
+	<!-- tabpane -->
+	<!-- quick_dial_item -->
+	<!--  quick_folder-->
+	 <dimen name="qd_folder_margin_top">80dip</dimen>
+	<!-- recommend -->
+	<dimen name="qd_recommend_item_padding_hor">15dp</dimen>
+	<dimen name="qd_recommend_item_padding_ver">10dp</dimen>
+	<dimen name="qd_recommend_item_height">50dp</dimen>
+	<dimen name="qd_recommend_item_icon_size">50dp</dimen>
+	<dimen name="qd_recommend_item_sitename_size">15sp</dimen>
+	<dimen name="qd_recommend_item_descrip_size">12sp</dimen>
+	<dimen name="qd_recommend_item_cat_size">11sp</dimen>
+	<dimen name="qd_recommend_feature_size">10sp</dimen>
+	<dimen name="qd_recommend_feature_padding">2dp</dimen>
+	<dimen name="qd_recommend_progressbar_size">55dp</dimen>	
+	<dimen name="qd_recommend_progressbar_space">10dp</dimen>	
+	<dimen name="qd_recommend_feature_height">14dp</dimen>
+	
+	<!-- addmanually -->
+	<dimen name="quick_dial_window_space_hor">25dp</dimen>
+	<dimen name="quick_dial_window_space_ver">20dp</dimen>
+	<dimen name="qd_url_edit_height">37dp</dimen>
+	<dimen name="qd_url_btn_height">43dp</dimen>
+	<dimen name="qd_url_edit_padding">6dp</dimen>
+
+	<!-- mostvisit -->
+	<dimen name="qd_mostvisit_space_hor_mid">8dp</dimen>
+	<dimen name="qd_mostvisit_emptyview">18sp</dimen>
+	
+	<!-- dialog -->
+	<!-- go widget -->
+	<dimen name="widget_img_layout_widget">33dp</dimen>
+	<!-- Dialog Preference -->
+	<!-- Preference Screen -->
+	<dimen name="preference_list_divider_height">0.5dp</dimen>
+	<dimen name="setting_header_height">57dp</dimen>
+	<dimen name="setting_header_padding_left">25dp</dimen>
+	
+	<dimen name="preference_window_title_size">20dp</dimen>
+	<!-- 广告过滤显示相关 -->
+	<!-- weather -->
+	</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/qd_add_view" android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical" 
+	android:background="#FFFFFF" >
+	
+
+	<EditText
+		android:id="@+id/qd_url_edit" android:layout_height="@dimen/qd_url_edit_height"
+		android:layout_width="fill_parent" android:singleLine="true"
+		android:layout_marginTop="@dimen/quick_dial_window_space_hor"
+		android:layout_marginLeft="@dimen/quick_dial_window_space_hor"
+		android:layout_marginRight="@dimen/quick_dial_window_space_hor"
+		android:padding="@dimen/qd_url_edit_padding"
+		android:hint="@string/share_url" android:selectAllOnFocus="true"
+		android:background="@drawable/quickdial_edit_bg_selector" 
+		android:textColor="@color/qb_black" 
+		android:textSize="@dimen/quick_dial_window_font_size"
+	/>
+	
+	<EditText
+		android:id="@+id/qd_title_edit" android:layout_height="@dimen/qd_url_edit_height"
+		android:layout_width="fill_parent" android:singleLine="true"
+		android:layout_marginTop="@dimen/quick_dial_window_space_ver"
+		android:layout_marginLeft="@dimen/quick_dial_window_space_hor"
+		android:layout_marginRight="@dimen/quick_dial_window_space_hor"
+		android:padding="@dimen/qd_url_edit_padding"
+		android:hint="@string/share_title" android:selectAllOnFocus="true"
+		android:background="@drawable/quickdial_add_manually_edittext" 
+		android:textSize="@dimen/quick_dial_window_font_size"
+	/>
+	
+	<Button android:id="@+id/qd_ok"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/qd_url_btn_height"
+		android:gravity="center"
+		android:text="@string/quickdial_add_button_add"
+		android:layout_marginLeft="@dimen/quick_dial_window_space_hor"
+		android:layout_marginRight="@dimen/quick_dial_window_space_hor"
+		android:layout_marginTop="@dimen/quick_dial_window_space_ver"
+		android:textColor="#FFFFFF" android:textSize="17sp"
+		android:textStyle="bold"
+		android:background="@drawable/quickdial_add_manual_btn" 
+	/>
+
+</LinearLayout>

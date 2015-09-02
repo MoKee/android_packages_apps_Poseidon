@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+
+    <color name="transparent_background">#00ffffff</color>
+    <drawable name="red">#7f00</drawable>
+    <drawable name="blue">#770000ff</drawable>
+    <drawable name="main_frame_bg">#ffffffff</drawable>
+    <!-- haha -->
+    <!-- 不换肤主视图背景  main client bm_background -->
+    <!-- Gesture Settings -->
+    <color name="qb_white">#ffffffff</color>
+    <!-- Gesture Settings END -->
+
+
+    <!-- SSL -->
+    <!-- SSL END -->
+
+
+    <!-- MultiWindow -->
+    <!-- MultiWindow End -->
+
+    <color name="qb_black">#ff000000</color>
+    <!-- AppWidget Rss -->
+    <!-- history -->
+    <color name="history_group_text_color">#333333</color>
+    <!-- haha -->
+    <!-- quickdial -->
+    <!-- 西红柿色 -->
+    <!-- 深粉红色 -->
+    <!-- 鲜肉色 -->
+    <color name="qd_emptyview_text">#838383</color>
+    
+
+    <!-- 以下添加到皮肤 -->
+    <!-- webview error -->
+    <!-- download error -->
+    <!-- Addons -->
+    <!-- ReadMode -->
+    <!-- MxReader -->
+    <!-- NightMode -->
+    <!-- download -->
+    <!-- history -->
+    <!-- QR Code -->
+    <!-- QuickDial Adding Text Color -->
+    <color name="quickdial_add_toppanel_normal">#8E8E8E</color>
+    <color name="quickdial_listview_divider">#EAEAEA</color>
+    <color name="quickdial_stroke_normal">#C0C0C0</color>
+    <color name="quickdial_stroke_select">#A0A0A0</color>
+    <color name="quickdial_solid_normal">#F7F7F7</color>
+    <color name="quickdial_solid_select">#F9F9F9</color>
+    
+    <!-- QuickDial Drag Folder -->
+   	<color name="qd_item_title_color">#FF404040</color>
+    <color name="qd_line_blue">#4fc9d8</color>
+    <color name="qd_folder_shadow">#30000000</color>
+    
+    <!-- Custom Dialog -->
+    <!-- DialogPreference -->
+	<color name="dialog_preference_background">#f7f7f7</color>
+	<color name="dialog_preference_divider">#e8e8e8</color>
+	<color name="setting_header_bg">#3D3D3D</color>
+	
+	<!-- 输入法上方工具条相关 -->
+	<!-- 多窗口相关的设置  -->
+    <!-- weather -->
+	<color name="weather_cs_searchlayout_bg_color">#449bf2</color>
+	</resources>

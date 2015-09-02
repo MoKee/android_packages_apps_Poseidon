@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mx.browser.navigation.MxQuickDialDragLayer xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:drag="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/qd_drag_layer"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/qb_white"
+    drag:cellHeight="@dimen/qd_cell_height"
+    drag:cellWidth="@dimen/qd_cell_width"
+    drag:layer_padding_left_landscape="@dimen/qd_layer_padding_left_landscape"
+    drag:layer_padding_left_portrait="@dimen/qd_layer_padding_left_portrait"
+    drag:layer_padding_top_landscape="@dimen/qd_layer_padding_top_landscape"
+    drag:layer_padding_top_portrait="@dimen/qd_layer_padding_top_portrait"
+    drag:layer_small_columns="4" >
+
+    <!-- 主屏幕 -->
+
+    <com.mx.browser.navigation.DragCellScrollView
+        android:id="@+id/qd_drag_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="top|left"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:visibility="visible" >
+
+        <com.mx.browser.navigation.DragWorkspace
+            android:id="@+id/qd_workspace"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <com.mx.browser.navigation.DragCellLayout
+                android:id="@+id/qd_workspace_cell"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="0dip" />
+        </com.mx.browser.navigation.DragWorkspace>
+    </com.mx.browser.navigation.DragCellScrollView>
+
+</com.mx.browser.navigation.MxQuickDialDragLayer>

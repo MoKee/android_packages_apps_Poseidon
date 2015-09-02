@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="hour_ago">小时前</string>
+    <string name="minute_ago">分钟前</string>
+    <string name="share_title">标题</string>
+    <string name="share_url">网址</string>
+    <string name="share_sign">[来自 @傲游浏览器 ]</string>
+    <string name="bp_add_item">添加</string>
+    <string name="quick_dial_url_had_exist">正在添加的项目已经存在</string>
+    <string name="bm_error_title_empty">标题不能为空</string>
+    <string name="bm_error_url_empty">URL不能为空</string>
+    <string name="history_label_today">今天</string>
+    <string name="history_label_yesterday">昨天</string>
+    <string name="wg_rss_date_yesterday">昨天</string>
+    <string name="wg_rss_added_to_widget">添加成功</string>
+    <string name="app_name">傲游云浏览器</string>
+    <string name="quick_dial_add_success">添加成功</string>
+    <string name="quick_dial_edit_success">修改成功</string>
+    <string name="qb_choosertitle_sharevia">分享方式</string>
+    <string name="quick_dial_delete_success">删除成功</string>
+    <string name="quick_dial_delete_faliure">删除失败</string>
+    <string name="app_center_title_index">推荐</string>
+    <string name="app_center_title_newest">最新</string>
+    <string name="reader_channel_list_time_yesterday">昨天</string>
+    <string name="reader_channel_list_time_just_now">刚刚</string>
+    <string name="reader_channel_list_time_x_minutes_ago">%d分钟前</string>
+    <string name="reader_channel_list_time_x_hours_ago">%d小时前</string>
+    <string name="quickdial_add_toppanel_manual">自定义</string>
+    <string name="quickdial_add_toppannel_mostvisited">最常访问</string>
+    <string name="quickdial_add_toppannel_recommend">推荐</string>
+    <string name="quickdial_add_button_add">添加</string>
+    <string name="quickdial_add_button_edit">修改</string>
+    <string name="qd_folder_name">文件夹</string>
+    <string name="qd_recommend_loading">内容正在加载中...</string>
+    <string name="qd_recommend_loaded_failure">点击屏幕重新加载</string>
+    <string name="qd_deleted">条目已移除</string>
+    <string name="quickdial_add_recommend_toast_failure_loading">加载出错</string>
+    <!-- MultiWindow -->
+    </resources>

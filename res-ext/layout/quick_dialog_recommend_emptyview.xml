@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ProgressBar
+        android:id="@+id/qd_recommend_loading"
+        android:layout_width="@dimen/qd_recommend_progressbar_size"
+        android:layout_height="@dimen/qd_recommend_progressbar_size"
+        android:layout_gravity="center_horizontal"
+        android:indeterminate="false"
+        android:indeterminateDrawable="@anim/rss_readmode_loading" 
+        android:visibility="gone" />
+    
+    <TextView
+        android:id="@+id/qd_recommend_loaded_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/qd_emptyview_text"
+        android:visibility="gone"
+        android:textSize="@dimen/qd_mostvisit_emptyview"
+        android:layout_marginTop="@dimen/qd_recommend_progressbar_space"
+        />
+
+</LinearLayout>

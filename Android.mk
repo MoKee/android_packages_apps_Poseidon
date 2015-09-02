@@ -23,6 +23,16 @@ LOCAL_EMMA_COVERAGE_FILTER := *,-com.android.common.*
 # We need the sound recorder for the Media Capture API.
 LOCAL_REQUIRED_MODULES := SoundRecorder
 
+#LOCAL_RESOURCE_DIR := $(LOCAL_RESOURCE_DIR) $(LOCAL_PATH)/res-ext
+res_dir := res res-ext
+LOCAL_RESOURCE_DIR := $(addprefix $(LOCAL_PATH)/, $(res_dir))
+
+
+LOCAL_AAPT_FLAGS := \
+	--auto-add-overlay \
+	--extra-packages com.mx.browser \
+					
+
 include $(BUILD_PACKAGE)
 
 include $(CLEAR_VARS)
