@@ -89,7 +89,7 @@
             android:name="com.mx.browser.navigation.QuickDialAddActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
             android:theme="@android:style/Theme.NoTitleBar"
-            android:windowSoftInputMode="adjustResize" />
+            android:windowSoftInputMode="adjustResize" >
         </activity>
         <provider android:name=".provider.BrowserProvider2"
                   android:authorities="com.android.browser;browser"
