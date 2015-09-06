@@ -162,7 +162,8 @@ public class NavScreen extends RelativeLayout
         new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openNewTab(false);
+//                openNewTab(false);
+                showQuickDial(v);
             }
         });
     }
@@ -185,9 +186,9 @@ public class NavScreen extends RelativeLayout
                     
                 }
             });
-            q.show(v);
-
+            q.show(mHomeTab); 
     }
+
     @Override
     public void onClick(View v) {
         if (mBookmarks == v) {
