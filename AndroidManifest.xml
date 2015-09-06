@@ -80,7 +80,7 @@
                    android:supportsRtl="true" >
         <meta-data
             android:name="channelId"
-            android:value="maxthon1" />
+            android:value="max6201500000" />
         <meta-data
             android:name="revision"
             android:value="byEclipse" />

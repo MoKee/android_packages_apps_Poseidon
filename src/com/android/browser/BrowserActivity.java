@@ -44,6 +44,7 @@ import com.mx.browser.navigation.MxQuickDialDragLayer;
 import com.mx.browser.R;
 import android.view.LayoutInflater;
 
+import com.mx.browser.navigation.QuickDialWindow;
 
 public class BrowserActivity extends Activity {
 
@@ -66,8 +67,7 @@ public class BrowserActivity extends Activity {
                     + (icicle == null ? "false" : "true"));
         }
         super.onCreate(icicle);
-        MxQuickDialDragLayer mMainQuickDial = (MxQuickDialDragLayer) LayoutInflater.from(this).inflate(R.layout.qd_dial_draglayer, null, false);
-        mMainQuickDial.init(this);
+        QuickDialWindow q=QuickDialWindow.getInstance(this);
 
         if (shouldIgnoreIntents()) {
             finish();

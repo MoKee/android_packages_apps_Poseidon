@@ -169,7 +169,8 @@ public class NavScreen extends RelativeLayout
     }
 
     private void showQuickDial(View v) {
-            final QuickDialWindow q=new QuickDialWindow(mActivity);
+            final QuickDialWindow q=QuickDialWindow.getInstance(mActivity);
+            //final QuickDialWindow q=new QuickDialWindow(mActivity);
             q.getQuickDialDragLayer().setQuickDialOpenUrlListener(new QuickDialOpenUrlListener() {
                 
                 @Override
@@ -193,8 +194,9 @@ public class NavScreen extends RelativeLayout
     public void onClick(View v) {
         if (mBookmarks == v) {
             mUiController.bookmarksOrHistoryPicker(ComboViews.Bookmarks);
-        } else if (mNewIncognitoTab == v || mNewTab == v) {
-            // openNewTab(mNewIncognitoTab == v);
+        } else if (mNewIncognitoTab == v ) {
+             openNewTab(mNewIncognitoTab == v);
+        } else if (mNewTab == v) {
             showQuickDial(v);
             
         } else if (mHomeTab == v) {
