@@ -16,6 +16,9 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- Application name -->
+    <string name="mk_application_name">Poseidon</string>
+
     <!-- Exit button -->
     <string name="menu_exit">Exit</string>
 

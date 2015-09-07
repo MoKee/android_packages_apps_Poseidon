@@ -41,7 +41,6 @@ import android.content.Intent;
 
 import android.net.Uri;
 
-
 import com.android.browser.NavTabScroller.OnLayoutListener;
 import com.android.browser.NavTabScroller.OnRemoveListener;
 import com.android.browser.TabControl.OnThumbnailUpdatedListener;
@@ -51,10 +50,8 @@ import java.util.HashMap;
 import java.util.List;
 
 import com.mx.browser.MxActionDefine;
-
 import com.mx.browser.navigation.MxQuickDialDragLayer.QuickDialOpenUrlListener;
 import com.mx.browser.navigation.QuickDialWindow;
-
 
 public class NavScreen extends RelativeLayout
         implements OnClickListener, OnMenuItemClickListener, OnThumbnailUpdatedListener {
@@ -172,7 +169,7 @@ public class NavScreen extends RelativeLayout
             final QuickDialWindow q=QuickDialWindow.getInstance(mActivity);
             //final QuickDialWindow q=new QuickDialWindow(mActivity);
             q.getQuickDialDragLayer().setQuickDialOpenUrlListener(new QuickDialOpenUrlListener() {
-                
+
                 @Override
                 public void openUrl(String url) {
                     Intent intent = null;
@@ -184,10 +181,10 @@ public class NavScreen extends RelativeLayout
                     intent.setClassName(getContext(), BrowserActivity.class.getName());
                     getContext().startActivity(intent);
                     q.dimiss();
-                    
+
                 }
             });
-            q.show(mHomeTab); 
+            q.show(mHomeTab);
     }
 
     @Override
@@ -198,7 +195,6 @@ public class NavScreen extends RelativeLayout
              openNewTab(mNewIncognitoTab == v);
         } else if (mNewTab == v) {
             showQuickDial(v);
-            
         } else if (mHomeTab == v) {
             // gotoHomePage();
            showQuickDial(v); 

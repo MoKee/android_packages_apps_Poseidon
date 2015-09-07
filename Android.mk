@@ -6,7 +6,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_STATIC_JAVA_LIBRARIES := \
         android-common \
         guava \
-		quickdial \
+        quickdial \
         android-support-v13 \
         android-support-v4
 
@@ -14,7 +14,7 @@ LOCAL_SRC_FILES := \
         $(call all-java-files-under, src) \
         src/com/android/browser/EventLogTags.logtags
 
-LOCAL_PACKAGE_NAME := Browser
+LOCAL_PACKAGE_NAME := Poseidon
 
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
@@ -27,11 +27,10 @@ LOCAL_REQUIRED_MODULES := SoundRecorder
 res_dir := res res-ext
 LOCAL_RESOURCE_DIR := $(addprefix $(LOCAL_PATH)/, $(res_dir))
 
-
 LOCAL_AAPT_FLAGS := \
-	--auto-add-overlay \
-	--extra-packages com.mx.browser \
-					
+    --auto-add-overlay \
+    --rename-manifest-package com.mokee.poseidon \
+    --extra-packages com.mx.browser \
 
 include $(BUILD_PACKAGE)
 
