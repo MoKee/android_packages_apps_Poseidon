@@ -23,12 +23,15 @@ LOCAL_JAVA_LIBRARIES := android.test.runner
 # Include all test java files.
 LOCAL_SRC_FILES := $(call all-java-files-under, src)
 
-# Notice that we don't have to include the src files of Browser because, by
-# running the tests using an instrumentation targeting Browser, we
+# Notice that we don't have to include the src files of Poseidon because, by
+# running the tests using an instrumentation targeting Poseidon, we
 # automatically get all of its classes loaded into our environment.
 
-LOCAL_PACKAGE_NAME := BrowserTests
+LOCAL_PACKAGE_NAME := PoseidonTests
 
-LOCAL_INSTRUMENTATION_FOR := Browser
+LOCAL_INSTRUMENTATION_FOR := Poseidon
+
+LOCAL_AAPT_FLAGS := \
+    --rename-manifest-package com.mokee.poseidon
 
 include $(BUILD_PACKAGE)

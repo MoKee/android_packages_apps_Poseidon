@@ -30,7 +30,7 @@ LOCAL_RESOURCE_DIR := $(addprefix $(LOCAL_PATH)/, $(res_dir))
 LOCAL_AAPT_FLAGS := \
     --auto-add-overlay \
     --rename-manifest-package com.mokee.poseidon \
-    --extra-packages com.mx.browser \
+    --extra-packages com.mx.browser
 
 include $(BUILD_PACKAGE)
 

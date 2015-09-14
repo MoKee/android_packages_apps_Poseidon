@@ -15,7 +15,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="mk_application_name">波赛顿</string>
+  <string name="mk_application_name">波赛东</string>
   <string name="menu_exit">退出</string>
   <string name="pref_content_download_confirmation">下载确认</string>
   <string name="pref_content_download_confirmation_summary">开始下载前显示提示</string>
